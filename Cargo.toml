@@ -1,5 +1,5 @@
 [package]
-name = "ssvm_nodejs_starter"
+name = "ssvm_nodejs_archive"
 version = "0.1.0"
 authors = ["ubuntu"]
 edition = "2018"
@@ -8,9 +8,15 @@ edition = "2018"
 wasm-opt = ['-O4']
 
 [lib]
-name = "ssvm_nodejs_starter_lib"
-path = "src/lib.rs"
+name = "ssvm_nodejs_archive"
+path = "src/lib-lzma_rs-lzma.rs"
+# path = "src/lib-lzma_rs-lzma-throw.rs"
+# path = "src/lib-lzma_rs-lzma2.rs"
+# path = "src/lib-test.rs"
+# path = "src/lib-xz2.rs"
 crate-type =["cdylib"]
 
 [dependencies]
 wasm-bindgen = "=0.2.61"
+lzma-rs = "0.1"
+# xz2 = "0.1"
